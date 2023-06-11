@@ -1,0 +1,35 @@
+.stages {
+    padding-top: 73px;
+    padding-bottom: 70px;
+    &__title {
+        max-width: 652px;
+        margin-bottom: 23px;
+    }
+    &-grid {
+        margin-top: 49px;
+        display: grid;
+        gap: 29px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        &-item {
+            span {
+                background: #679edf;
+                border-radius: 9px;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 120%;
+                color: white;
+                padding: 9px 19px;
+            }
+            b {
+                border-top: 1px dashed #333333;
+                flex: 1 1 auto;
+            }
+            & > div {
+                display: flex;
+                margin-bottom: 24px;
+
+                align-items: center;
+            }
+        }
+    }
+}
