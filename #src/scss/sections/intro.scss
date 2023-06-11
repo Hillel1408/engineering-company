@@ -1,0 +1,34 @@
+.intro {
+    background: #e2edf5;
+    padding-top: 29px;
+    padding-bottom: 52px;
+    &-block {
+        position: relative;
+        width: 100%;
+        img {
+            border-radius: 20px;
+            width: 100%;
+            height: 559px;
+            object-fit: cover;
+        }
+    }
+    &-content {
+        position: absolute;
+        left: 55px;
+        right: 55px;
+        bottom: 31px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 49px;
+        h1 {
+            font-weight: 600;
+            font-size: 35px;
+            line-height: 115%;
+            color: white;
+        }
+    }
+    &__big-text {
+        color: white;
+        margin-bottom: 32px;
+    }
+}
