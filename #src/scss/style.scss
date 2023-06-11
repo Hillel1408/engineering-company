@@ -37,8 +37,25 @@ body.lock {
     line-height: 120%;
     color: #333333;
 }
+.big-text {
+    font-size: 18px;
+    line-height: 135%;
+    color: #333333;
+}
+.btn {
+    display: inline-block;
+    padding: 20px 63px;
+    background: #679edf;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Montserrat', sans-serif;
+}
 
 @import './sections/header';
+@import './sections/implementation';
 @import './sections/experience';
 @import './sections/objects';
 @import './sections/faq';

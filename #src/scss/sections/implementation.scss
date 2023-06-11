@@ -1,0 +1,33 @@
+.implementation {
+    padding-top: 73px;
+    padding-bottom: 70px;
+    background-color: #e2edf5;
+    &__title {
+        max-width: 680px;
+        margin-bottom: 57px;
+    }
+    &-grid {
+        margin-bottom: 32px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
+        row-gap: 46px;
+    }
+    &-item {
+        padding: 0 58px 34px 58px;
+        background: #ffffff;
+        border-radius: 15px;
+        span {
+            display: inline-block;
+            width: 86px;
+            height: 86px;
+            border-radius: 50%;
+            background-color: #679edf;
+            margin-top: -20px;
+            margin-bottom: 29px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
