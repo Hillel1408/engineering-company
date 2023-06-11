@@ -1,0 +1,39 @@
+.header {
+    padding-top: 34px;
+    background: #e2edf5;
+    &-logo {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        img {
+            width: 250px;
+        }
+        p {
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 15px;
+            color: #333333;
+        }
+    }
+    &__nav {
+        display: flex;
+        gap: 37px;
+        li {
+            a {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 22px;
+                color: #333333;
+                text-transform: uppercase;
+                display: flex;
+                gap: 8px;
+                align-items: center;
+            }
+        }
+    }
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
