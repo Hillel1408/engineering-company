@@ -5,10 +5,39 @@ body.lock {
     overflow: hidden !important;
 }
 .container {
-    max-width: 1240px;
+    max-width: 1190px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 30px;
+}
+.title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 115%;
+    color: #333333;
+    &-spn {
+        font-size: 12px;
+        line-height: 115%;
+        color: #333333;
+        display: flex;
+        gap: 11px;
+        align-items: center;
+        margin-bottom: 11px;
+        &:before {
+            content: '';
+            display: block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #679edf;
+        }
+    }
+}
+.text {
+    font-size: 16px;
+    line-height: 120%;
+    color: #333333;
 }
 
 @import './sections/header';
+@import './sections/faq';
 @import './sections/footer';
