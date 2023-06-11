@@ -1,0 +1,14 @@
+@import 'fonts';
+@import 'null';
+
+body.lock {
+    overflow: hidden !important;
+}
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@import './sections/header';
+@import './sections/footer';
