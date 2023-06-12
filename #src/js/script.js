@@ -1,4 +1,4 @@
-let contactsSpoilers = document.querySelectorAll('.faq-spoiler-flex');
+const contactsSpoilers = document.querySelectorAll('.faq-spoiler-flex');
 if (contactsSpoilers) {
     for (let spoiler of contactsSpoilers) {
         spoiler.addEventListener('click', function () {
@@ -27,4 +27,12 @@ const evidenceSlider = new Swiper('.evidence-slider', {
         nextEl: '.evidence-slider-button-next',
         prevEl: '.evidence-slider-button-prev',
     },
+});
+
+const phoneInput = document.querySelectorAll('.phone-input');
+
+phoneInput.forEach((item) => {
+    const phoneMask = new IMask(item, {
+        mask: '+{7}(000)000-00-00',
+    });
 });
