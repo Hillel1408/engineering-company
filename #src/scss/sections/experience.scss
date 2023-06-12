@@ -1,6 +1,14 @@
 .experience {
     padding-top: 73px;
     padding-bottom: 70px;
+    @media (max-width: 768px) {
+        padding-top: 63px;
+        padding-bottom: 60px;
+    }
+    @media (max-width: 360px) {
+        padding-top: 53px;
+        padding-bottom: 50px;
+    }
     &-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -11,12 +19,30 @@
                 height: 341px;
                 object-fit: cover;
                 border-radius: 20px;
+                @media (max-width: 992px) {
+                    height: 225px;
+                }
+                @media (max-width: 768px) {
+                    height: 341px;
+                }
+                @media (max-width: 360px) {
+                    height: 209px;
+                }
             }
             &:first-child {
                 display: flex;
                 flex-direction: column;
                 gap: 19px;
             }
+        }
+        @media (max-width: 992px) {
+            gap: 43px;
+            align-items: flex-end;
+            grid-template-columns: 1.4fr 1fr;
+        }
+        @media (max-width: 768px) {
+            gap: 35px;
+            grid-template-columns: 1fr;
         }
     }
     &__note {
