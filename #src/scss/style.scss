@@ -31,6 +31,12 @@ body.lock {
             background-color: #679edf;
         }
     }
+    @media (max-width: 768px) {
+        font-size: 35px;
+    }
+    @media (max-width: 360px) {
+        font-size: 30px;
+    }
 }
 .text {
     font-size: 16px;
@@ -58,6 +64,7 @@ body.lock {
 @import './sections/stages';
 @import './sections/clients';
 @import './sections/intro';
+@import './sections/evidence';
 @import './sections/directions';
 @import './sections/implementation';
 @import './sections/experience';

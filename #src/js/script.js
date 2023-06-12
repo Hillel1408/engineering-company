@@ -10,11 +10,21 @@ if (contactsSpoilers) {
     }
 }
 
-const swiper = new Swiper('.clients-slider', {
+const clientsSlider = new Swiper('.clients-slider', {
     direction: 'horizontal',
     slidesPerView: 1,
     navigation: {
         nextEl: '.clients-slider-button-next',
         prevEl: '.clients-slider-button-prev',
+    },
+});
+
+const evidenceSlider = new Swiper('.evidence-slider', {
+    direction: 'horizontal',
+    slidesPerView: 'auto',
+    spaceBetween: 45,
+    navigation: {
+        nextEl: '.evidence-slider-button-next',
+        prevEl: '.evidence-slider-button-prev',
     },
 });
