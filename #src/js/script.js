@@ -36,3 +36,20 @@ phoneInput.forEach((item) => {
         mask: '+{7}(000)000-00-00',
     });
 });
+
+const headerBtn = document.querySelector('.header-btn');
+const headerNav = document.querySelector('.header__nav');
+const headerCloseBtn = document.querySelector('.header-closeBtn');
+
+const func = () => {
+    headerNav.classList.toggle('active');
+    document.body.classList.toggle('lock');
+};
+
+headerBtn.addEventListener('click', () => {
+    func();
+});
+
+headerCloseBtn.addEventListener('click', () => {
+    func();
+});
