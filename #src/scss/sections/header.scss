@@ -68,6 +68,16 @@
                     display: block;
                 }
             }
+            @media (max-width: 768px) {
+                &:nth-child(4),
+                &:nth-child(5),
+                &:nth-child(6) {
+                    display: block;
+                }
+                &:last-child {
+                    display: none;
+                }
+            }
         }
     }
     &-container {
